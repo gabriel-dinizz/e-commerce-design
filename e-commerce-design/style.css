@@ -17,14 +17,12 @@ header {
 }
 
 .navigation {
-  padding-left: 800px;
   display: flex;
   gap: 20px; /* Space between navigation items */
   color: black;
 }
 
 .sign-in {
-  /* margin-left: auto; */
   padding: 3px;
   background-color: #ced4da;
   border-radius: 5px;
@@ -40,7 +38,7 @@ header {
 }
 
 aside {
-  display: block;
+  display: inline-block;
   text-align: left;
   padding: 15px;
   border: 2px solid #dee2e6;
@@ -65,4 +63,36 @@ aside input {
 aside label {
   margin-bottom: 15px;
   display: inline-block;
+}
+
+.container {
+  display: flex;
+  justify-content: left; /* Center the content horizontally */
+  margin-top: 20px; /* Adjust the margin-top to bring the content closer to the hr */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Space between elements */
+}
+
+.topnav,
+.side-nav {
+  display: flex;
+  align-items: center;
+}
+
+.topnav input[type="text"] {
+  width: 300px;
+  padding: 10px;
+}
+
+.topnav button {
+  padding: 10px 20px;
+}
+
+.side-nav div {
+  margin-left: 20px; /* Space between navigation items */
 }
