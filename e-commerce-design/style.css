@@ -67,15 +67,15 @@ aside label {
 
 .container {
   display: flex;
-  justify-content: left; /* Center the content horizontally */
-  margin-top: 20px; /* Adjust the margin-top to bring the content closer to the hr */
+  justify-content: left; /* Align container content to the left */
+  margin-top: 20px;
 }
 
-nav {
+.main-content {
   display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 20px; /* Space between elements */
+  gap: 20px; /* Add space between the topnav and side-nav */
+  margin-left: 25px;
 }
 
 .topnav,
@@ -94,5 +94,32 @@ nav {
 }
 
 .side-nav div {
-  margin-left: 20px; /* Space between navigation items */
+  margin-left: 20px; /* Space between side navigation items */
+}
+
+article {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px; /* Space between boxes */
+  justify-content: center;
+  margin: 20px;
+}
+
+.box {
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  width: 150px; /* Adjust width */
+  height: 200px; /* Adjust height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boximg {
+  width: 100px; /* Adjust image width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 5px;
 }
